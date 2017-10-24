@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class App extends React.Component {
+class Layout extends React.Component {
   constructor() {
     super();
+    this.title = "React - Hello World";
   }
 
   render() {
     return (
       <div>
-          <h1>React - Hello World</h1>
+          <h1>{this.title}</h1>
       </div>
       );
   }
 }
 
 const app = document.getElementById('app');
-ReactDOM.render(<App/>, app);
+ReactDOM.render(<Layout/>, app);
