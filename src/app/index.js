@@ -1,19 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class App extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <div>
-          <h1>React - Hello World</h1>
-      </div>
-      );
-  }
-}
+import Layout from "./components/Layout";
 
 const app = document.getElementById('app');
-ReactDOM.render(<App/>, app);
+ReactDOM.render(<Layout/>, app);
